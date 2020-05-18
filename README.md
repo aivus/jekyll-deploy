@@ -71,3 +71,10 @@ jobs:
           JEKYLL_ENV: production
           GH_PAGES_TOKEN: ${{ secrets.GH_PAGES_TOKEN }}
 ```
+
+## Create GH_PAGES_TOKEN access token to trigger GitHub Pages rebuild
+
+GitHub Pages deploys changes automatically in case of new commit.
+For scheduled depoyment it's required to trigger GitHub Pages [rebuild manually using API](https://developer.github.com/v3/repos/pages/#request-a-page-build).
+
+To do this it's required to create
